@@ -18,13 +18,13 @@ function UsedCar() {
           <img src={used1} alt="used1" />
         </div>
         <div>
-          <img src={used2} alt="used1" />
+          <img src={used2} alt="used2" />
         </div>
         <div className="quad">
-          <img src={used3} alt="used1" />
-          <img src={used4} alt="used1" />
-          <img src={used5} alt="used1" />
-          <img src={used6} alt="used1" />
+          <img src={used3} alt="used3" />
+          <img src={used4} alt="used4" />
+          <img src={used5} alt="used5" />
+          <img src={used6} alt="used6" />
         </div>
       </div>
       <div className="container">

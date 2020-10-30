@@ -36,26 +36,24 @@ function List() {
     },
   ];
   return (
-    <div>
-      <div className="container">
-        <div className="list">
-          {lists.map((list, index) => {
-            return (
-              <div key={index}>
-                <h2>{list.title}</h2>
-                <ul>
-                  {list.listName.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <Link to="#/">{item}</Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
+    <div className="container">
+      <div className="list">
+        {lists.map((list, index) => {
+          return (
+            <div key={index}>
+              <h2>{list.title}</h2>
+              <ul>
+                {list.listName.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <Link to="#/">{item}</Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
