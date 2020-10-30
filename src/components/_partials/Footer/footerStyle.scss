@@ -1,0 +1,27 @@
+.footer {
+  background-color: #191f22;
+  height: 500px;
+  .top {
+    h2 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 600;
+      padding-top: 20px;
+    }
+    .select {
+      height: 100px;
+      border-bottom: 1px solid #494e51;
+    }
+  }
+  .bottom {
+    color: #fff;
+    font-size: 16px;
+    ul {
+      li {
+        &:first-child {
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+}

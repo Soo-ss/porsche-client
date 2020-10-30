@@ -1,0 +1,35 @@
+.shop {
+  height: 500px;
+  h2 {
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+  .image-wrapper {
+    float: left;
+    width: 20%;
+    font-size: 0;
+    &:first-child {
+      width: 40%;
+    }
+    .image-box1 {
+      height: 322px;
+      background-image: url("../../../images/tool1.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .image-box2 {
+      height: 322px;
+      background-image: url("../../../images/tool2.jpg");
+    }
+    .image-box3 {
+      height: 322px;
+      background-image: url("../../../images/tool3.jpg");
+    }
+    .image-box4 {
+      height: 322px;
+      background-image: url("../../../images/tool4.jpg");
+    }
+  }
+}
