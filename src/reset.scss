@@ -1,12 +1,10 @@
-import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
+@import url("https://unpkg.com/swiper/swiper-bundle.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 
-export const GlobalStyle = createGlobalStyle`
-${reset}
 @font-face {
   font-family: "PorscheNextWLa";
   /* src: url("../fonts/PorscheNextWLa-Bold.ttf"); */
-  src: url(${require("../fonts/PorscheNextWLa-Regular.ttf")});
+  src: url("./fonts/PorscheNextWLa-Regular.ttf");
 }
 
 /* 여백 초기화 */
@@ -117,7 +115,11 @@ img {
   clear: both;
 }
 
-
+.container {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+}
 
 .row {
   padding: 0 28px;
@@ -126,5 +128,3 @@ img {
 .swiper-container {
   height: 100%;
 }
-
-`;

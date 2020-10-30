@@ -8,16 +8,16 @@ function Shop() {
         <h2>Shopping Tools</h2>
         <div className="image-total">
           <div className="image-wrapper">
-            <div className="image-box1">image1</div>
+            <div className="image-box1"></div>
           </div>
           <div className="image-wrapper">
-            <div className="image-box2">image2</div>
+            <div className="image-box2"></div>
           </div>
           <div className="image-wrapper">
-            <div className="image-box3">image3</div>
+            <div className="image-box3"></div>
           </div>
           <div className="image-wrapper">
-            <div className="image-box4">image4</div>
+            <div className="image-box4"></div>
           </div>
         </div>
       </div>

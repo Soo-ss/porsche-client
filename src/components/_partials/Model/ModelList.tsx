@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface IProp {
   image: string;
@@ -18,16 +19,16 @@ function ModelList(props: IProp) {
         <div className="bottom">
           <ul>
             <li className="black">
-              <a href="#/">
+              <Link to="#/">
                 <i className="fa fa-external-link" aria-hidden="true"></i>
                 &nbsp; 나만의 포르쉐 만들기
-              </a>
+              </Link>
             </li>
             <li className="white">
-              <a href="#/">
+              <Link to="#/">
                 <i className="fa fa-angle-right" aria-hidden="true"></i>
                 &nbsp; 모든 모델
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
