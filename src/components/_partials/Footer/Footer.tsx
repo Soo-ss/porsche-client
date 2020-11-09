@@ -17,7 +17,14 @@ function Footer() {
       <div className="container">
         <div className="top">
           <h2>국가 / 지역 변경:</h2>
-          <div className="select"></div>
+          <select>
+            <option>지역을 선택하여 주십시오</option>
+            <option>Asia</option>
+          </select>
+          <select>
+            <option>국가 / 지역을 선택하십시오</option>
+            <option>한국</option>
+          </select>
         </div>
         <div className="bottom">
           <ul>

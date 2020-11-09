@@ -29,13 +29,27 @@ function Header() {
       goto: "#/",
       title: "Connect with Porsche - Social Networks",
     },
+    {
+      goto: "login",
+      title: "Login",
+    },
+    {
+      goto: "register",
+      title: "Register",
+    },
+    {
+      goto: "me",
+      title: "My Page",
+    },
   ];
   return (
     <div className="container">
       <div className="lined">
         <h1>
           <span>
-            <img src={logo} alt="porsche" />
+            <Link to="/">
+              <img src={logo} alt="porsche" />
+            </Link>
           </span>
         </h1>
       </div>
@@ -43,7 +57,7 @@ function Header() {
         <ul className="clearfix">
           {lists.map((item, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Link to={item.goto}>{item.title}</Link>
               </li>
             );

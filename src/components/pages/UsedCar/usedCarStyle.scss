@@ -55,7 +55,7 @@
 .right {
   float: right;
   text-align: right;
-  button {
+  .carButton {
     font-size: 16px;
     text-align: left;
     width: 200px;
@@ -74,6 +74,72 @@
     i {
       padding-right: 10px;
       font-size: 20px;
+    }
+  }
+}
+.side-nav {
+  text-align: left;
+  position: fixed;
+  right: -820px;
+  top: 0;
+  width: 820px;
+  height: 100%;
+  background: #fff;
+  // transition: all 0.3s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  &.on {
+    right: 0px;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 900;
+  }
+  p {
+    font-size: 18px;
+  }
+  i {
+    padding: 20px;
+    float: right;
+  }
+  .bottom {
+    padding: 20px;
+    background: #f2f2f2;
+    height: 100%;
+    h2 {
+      font-size: 24px;
+      font-weight: 900;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+// form section
+.usedCarForm {
+  .formGroup {
+    margin-top: 16px;
+    select {
+      width: 226px;
+      height: 48px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    input {
+      width: 453px;
+      height: 48px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .question {
+      color: #fff;
+      font-size: 16px;
+      background-color: #d5001c;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
