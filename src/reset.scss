@@ -105,6 +105,12 @@ img {
 }
 
 /* clearfix */
+/*
+블록구조는 한 영역을 차지한다. 즉 오른쪽에 누가 오는걸 싫어한다. (인라인과 반대)
+그래서 float쓰지만 치명적인 약점이 있다.
+=> float을 사용한 상위 박스(감싸고 있는 박스)의 height값이 0으로 설정된다. 영역이 사라져버린다.
+이것을 해결하기 위한 방법은 4가지가있다. 이 중에 하나가 clearfix이다.
+*/
 .clearfix:before,
 .clearfix:after {
   display: block;

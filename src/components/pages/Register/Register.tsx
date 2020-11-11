@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../../_partials/Header/Header";
 import Footer from "../../_partials/Footer/Footer";
 import "./registerStyle.scss";
-import { Link, RouteComponentProps } from "react-router-dom";
+import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 import Axios from "axios";
 
 function Register(props: RouteComponentProps) {
@@ -92,4 +92,4 @@ function Register(props: RouteComponentProps) {
   );
 }
 
-export default Register;
+export default withRouter(Register);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../../_partials/Header/Header";
 import Footer from "../../_partials/Footer/Footer";
-import { Link, RouteComponentProps } from "react-router-dom";
+import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 import Axios from "axios";
 
 function Login(props: RouteComponentProps) {
@@ -63,4 +63,4 @@ function Login(props: RouteComponentProps) {
   );
 }
 
-export default Login;
+export default withRouter(Login);

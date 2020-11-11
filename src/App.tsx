@@ -6,6 +6,7 @@ import Register from "./components/pages/Register/Register";
 import Login from "./components/pages/Login/Login";
 import MyPage from "./components/pages/MyPage/MyPage";
 import Auth from "./hoc/Auth";
+import Logout from "./components/pages/Logout/Logout";
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Auth(Home, null)} />
-          <Route exact path="/usedCar" component={Auth(UsedCar, true)} />
           <Route exact path="/register" component={Auth(Register, false)} />
           <Route exact path="/login" component={Auth(Login, false)} />
+          <Route exact path="/usedCar" component={Auth(UsedCar, true)} />
           <Route exact path="/me" component={Auth(MyPage, true)} />
+          <Route exact path="/logout" component={Auth(Logout, true)} />
         </Switch>
       </Router>
     </>

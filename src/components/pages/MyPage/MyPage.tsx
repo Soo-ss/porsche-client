@@ -19,21 +19,15 @@ function MyPage() {
     success: false,
   });
   useEffect(() => {
-    Axios.get("/api/user/auth")
-      .then((res) => {
-        console.log(res.data);
-        if (res.data.success) {
-          setUserInfo((UserInfo) => res.data);
-        } else {
-          alert("내 정보 가져오기 실패!");
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    Axios.get("/api/user/auth").then((res) => {
+      console.log(res.data);
+      if (res.data.success) {
+        setUserInfo(() => res.data);
+      } else {
+        alert("내 정보 가져오기 실패!");
+      }
+    });
   }, []);
-
-  console.log("My Page", UserInfo.updatedAt);
 
   return (
     <div>

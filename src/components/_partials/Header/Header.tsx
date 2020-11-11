@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./headerStyle.scss";
 import logo from "../../../images/logo.svg";
 import { Link } from "react-router-dom";
+import Axios from "axios";
 
 function Header() {
+  const [Me, setMe] = useState("");
   const lists = [
     {
       goto: "#/",
@@ -41,7 +43,16 @@ function Header() {
       goto: "me",
       title: "My Page",
     },
+    {
+      goto: "logout",
+      title: "Logout",
+    },
   ];
+
+  Axios.get("/api/user/auth").then((res) => {
+    setMe(res.data.isAuth);
+  });
+
   return (
     <div className="container">
       <div className="lined">
@@ -56,6 +67,24 @@ function Header() {
       <nav className="nav">
         <ul className="clearfix">
           {lists.map((item, index) => {
+            // logout
+            // usedCar, logout, me제외
+            if (!Me) {
+              if (
+                item.goto === "usedCar" ||
+                item.goto === "logout" ||
+                item.goto === "me"
+              ) {
+                return false;
+              }
+            }
+            // login
+            // login, register제외
+            else {
+              if (item.goto === "login" || item.goto === "register") {
+                return false;
+              }
+            }
             return (
               <li key={index}>
                 <Link to={item.goto}>{item.title}</Link>
