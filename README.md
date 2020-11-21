@@ -17,9 +17,7 @@
    ![](./gitImage/main.png)
 
 2. 포르쉐 인증 중고차 원본
-   ![](./gitImage/usedCarOriginal.png)
-
----
+   <img src="./gitImage/usedCarOriginal.png" width=600px>
 
 # 만든 페이지들
 
