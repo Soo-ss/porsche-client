@@ -28,7 +28,7 @@ function UsedCar() {
           <img src={used6} alt="used6" />
         </div>
       </div>
-      <div className="container">
+      <div className="container" style={{padding: "10px 0"}}>
         <Left />
         <Right />
       </div>
