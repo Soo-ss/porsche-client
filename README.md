@@ -14,15 +14,17 @@
 [사이트](https://www.porsche.com/korea/ko/)
 
 1. 메인페이지 원본
-   ![](./gitImage/main.png)
+   ![](./gitImage/mainOriginal.png)
 
 2. 포르쉐 인증 중고차 원본
-   <img src="./gitImage/usedCarOriginal.png" width=600px>
+   ![](./gitImage/usedCarOriginal.png)
+
+3. 로그인, 회원가입 페이지는 없습니다.
 
 # 만든 페이지들
 
 1. 메인페이지
-   ![](./gitImage/mainOriginal.png)
+   ![](./gitImage/main.png)
 
 2. 포르쉐 인증 중고차
    ![](./gitImage/usedCar.png)
