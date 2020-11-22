@@ -1,5 +1,10 @@
 # PORSCHE (website clone coding)
 
+## 사용기술
+
+- React
+- SCSS(SASS)
+
 ### 동아리원들을 대상으로 한 세미나입니다.
 
 - 포르쉐 웹사이트를 거의 비슷하게 클론코딩 했습니다.
@@ -40,3 +45,14 @@
 
 6. 마이페이지
    ![](./gitImage/mypage.png)
+
+## 주의!
+
+- 눈대중으로 대략 보고 코딩을 했습니다.
+- 따라서 몇픽셀은 안맞을수 있습니다.
+
+## Coming Soon...
+
+- [Lamborghini](https://www.lamborghini.com/en-en)
+- 여유가 되면 해보도록 하겠습니다.
+- 근데 여유가 안될것같아요 ㅎㅎ;
